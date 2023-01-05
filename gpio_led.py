@@ -12,7 +12,26 @@ def display(i: int, lights):
             led.on()
         else:
             led.off()
+def celebrate():
+    for t in range(3):
+        display(255, l)
+        sleep(0.8)
+        display(0, l)
+        sleep(0.8)
+    
 while True:
-    for i in range(124):
+    for i in range(256):
         display(i, l)
-        sleep(0.3)
+        if i==255:
+            celebrate();
+        else:
+            sleep(0.15)
+    # reverse the thing
+    for j in range(256):
+        display(255-j, l)
+        if j==255:
+            celebrate()
+        else:
+            sleep(0.15)
+
+        
