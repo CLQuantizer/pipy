@@ -3,7 +3,7 @@ from time import sleep
 
 # declare the ligts
 l = []
-for num in [16, 21, 20, 12, 24, 23, 18]:
+for num in [17, 16, 21, 20, 12, 24, 23, 18]:
     l.append(LED(num))
 
 def display(i: int, lights):
